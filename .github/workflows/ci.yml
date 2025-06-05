@@ -11,11 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Setup ssh key for yarn
+        run: ssh-keygen -t ed25519 -q -f "$HOME/.ssh/id_ed25519" -N ""
       - name: Build
         run: yarn && yarn build
   test-althea-dash:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Setup ssh key for yarn
+        run: ssh-keygen -t ed25519 -q -f "$HOME/.ssh/id_ed25519" -N ""
       - name: Build
         run: yarn && yarn test
