@@ -1,6 +1,9 @@
 {
   "running": "Exit is online and operating normally",
   "ExitStartup": "Exit operational status",
+  "ExitClients": "Clients online",
+  "ExitThroughput": "Exit throughput",
+  "bps": "bytes/second",
   "syncFromURL": "Sync from URL",
   "exitJson": "Exit JSON",
   "addManually": "Add Manually",
